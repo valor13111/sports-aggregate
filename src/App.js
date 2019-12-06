@@ -4,19 +4,19 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from './components/Home/Home';
-import About from './components/About/About';
+import NBA from './components/Sports/NBA/NBA';
 import Contact from './components/Contact/Contact';
-import Navbar from './components/Navbar/Navbar';
+import Layout from './components/Layout/Layout';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
-        
+        <Layout />
+
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
+          <Route path="/sports/nba" component={NBA} />
           <Route path="/contact" component={Contact} />
         </Switch>
       </Router>
